@@ -1,5 +1,3 @@
-// import { Link } from "react-router-dom";
-
 import axios from "axios";
 
 import RightArrowIcon from "@/assets/icon/ic-right-arrow.svg?react";
@@ -71,10 +69,6 @@ const Landing = () => {
 		<div css={layoutStyle}>
 			<div css={profileBoxStyle}>
 				<div css={profileImgStyle} />
-				{/* <Link to="/myinfo">
-					<p>사용자 닉네임</p>
-					<RightArrowIcon />
-				</Link> */}
 				<div className="test" onClick={handleAllowNotification}>
 					<p>사용자 닉네임</p>
 					<RightArrowIcon />
