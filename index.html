@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#485EEE" />
     <link
       rel="apple-touch-icon-precomposed"
       sizes="180x180"
@@ -19,20 +20,5 @@
     <div id="root"></div>
     <div id="modal"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <script>
-      if("serviceWorker" in navigator){
-        navigator.serviceWorker
-          .register("/firebase-messaging-sw.js")
-          .then(function (registration) {
-            console.log(
-              "Service Worker가 scope에 등록되었습니다.:", 
-              registration.scope
-            );
-          })
-          .catch(function (err) {
-            console.log("Service Worker 등록 실패:", err);
-          });
-      }
-    </script>
   </body>
 </html>

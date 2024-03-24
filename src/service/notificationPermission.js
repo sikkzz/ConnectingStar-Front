@@ -10,10 +10,10 @@ const sendToken = (token, nickname, password) => {
 };
 
 // import { sendTokenToServer } from "./api";
-// import { registerServiceWorker } from "./registerServiceWorker";
+import { registerServiceWorker } from "./registerServiceWorker";
 
 export async function handleAllowNotification() {
-	// registerServiceWorker(); // 나중에 설명
+	registerServiceWorker();
 	try {
 		const permission = await Notification.requestPermission();
 

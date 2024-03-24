@@ -16,6 +16,12 @@ export default defineConfig({
 				enabled: true,
 			},
 			manifest: {
+				name: "vite-pwa",
+				short_name: "vite-pwa",
+				start_url: "/",
+				display: "standalone",
+				background_color: "#ffffff",
+				theme_color: "#485EEE",
 				icons: [
 					{
 						src: "/icon-192.png",

@@ -1,5 +1,6 @@
-import { app } from "@/service/firebase-messaging-sw";
 import { getMessaging, onMessage } from "firebase/messaging";
+
+import { app } from "@/service/firebase-messaging-sw";
 
 export const messaging = getMessaging(app);
 
