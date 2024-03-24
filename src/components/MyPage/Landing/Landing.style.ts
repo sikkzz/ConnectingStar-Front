@@ -15,6 +15,15 @@ export const profileBoxStyle = css`
 	gap: 12px;
 	margin: 3.125rem 0 1.25rem;
 
+	& .test {
+		display: flex;
+		align-items: center;
+
+		& > p {
+			${theme.font.header};
+		}
+	}
+
 	& > a {
 		display: flex;
 		align-items: center;
